@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap');
+
+:root { --ink: #14213d; --gold: #c8963e; --bg: #f6f7f9; }
+
+body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--ink); margin: 0; }
+h1, h2, h3, h4, h5, .brand { font-family: 'DM Serif Display', serif; font-weight: 400; }
+
+.btn-gold { background: var(--gold); color: #fff; border: 0; font-weight: 500; }
+.btn-gold:hover { background: #b0822f; color: #fff; }
+.btn-ink { background: var(--ink); color: #fff; border: 0; }
+.btn-ink:hover { background: #0c1429; color: #fff; }
+
+.site-nav { background: var(--ink); }
+.site-nav .nav-link { color: #cfd5e3; }
+.site-nav .nav-link:hover, .site-nav .nav-link.active { color: #fff; }
+.site-nav .brand { color: #fff; font-size: 1.6rem; text-decoration: none; }
+.site-nav .brand span { color: var(--gold); }
+
+.hero {
+  background: linear-gradient(rgba(20,33,61,.72), rgba(20,33,61,.72)),
+    url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600') center/cover;
+  color: #fff; padding: 90px 0 120px;
+}
+.hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); max-width: 680px; }
+.hero p { max-width: 520px; color: #dde2ee; }
+
+.search-box {
+  background: #fff; border-radius: 12px; padding: 22px;
+  margin-top: -64px; position: relative; box-shadow: 0 10px 30px rgba(20,33,61,.15);
+}
+
+.room-card { border: 0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(20,33,61,.08); }
+.room-card img { height: 210px; object-fit: cover; }
+.price { font-size: 1.4rem; font-weight: 700; color: var(--ink); }
+.price small { font-weight: 400; color: #6b7280; font-size: .85rem; }
+
+.stat-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 16px rgba(20,33,61,.08); }
+.stat-card .num { font-size: 2rem; font-family: 'DM Serif Display', serif; }
+
+.panel { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 4px 16px rgba(20,33,61,.08); }
+.auth-card { max-width: 420px; margin: 40px auto; }
+
+.badge-booked { background: #e3f4ea; color: #1d7a45; }
+.badge-cancelled { background: #fbe6e6; color: #b32d2d; }
+.status-badge { padding: 4px 10px; border-radius: 20px; font-size: .8rem; font-weight: 500; }
+
+.site-footer { background: var(--ink); color: #aab2c5; padding: 28px 0; margin-top: 60px; }
